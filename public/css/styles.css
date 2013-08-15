@@ -28,7 +28,8 @@
   border-top-color: #34495e !important;
 }
 #chart {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  margin-top: 20px;
 }
 path {
   stroke: #F00;
@@ -41,7 +42,9 @@ line {
 text {
   /*font-family: Arial;*/
 
-  font-size: 9pt;
+  font-weight: normal;
+  font-size: 1.2em;
+  stroke: #34495e;
 }
 .yTicks {
   stroke: #CCC;
@@ -58,19 +61,19 @@ body {
 }
 h3.title {
   font-size: 1.4em;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 .container {
   width: 960px;
 }
 header {
-  padding: 10px 0;
+  padding: 15px 0;
 }
 .pad {
   margin: 0 20px ;
 }
 #sidebar {
-  color: #ecf0f1;
+  color: #c2c5ca;
   /*background: @midnight-blue;*/
 }
 #sidebar a {
@@ -95,6 +98,15 @@ img.avatar {
   max-width: 50px;
   max-height: 50px;
   border: 2px solid #FFF;
+  float: left;
+}
+.username {
+  float: left;
+  width: 100px;
+  margin-left: 15px;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-top: 15px;
 }
 #main {
   background: #FFF;
@@ -103,6 +115,7 @@ img.avatar {
   box-shadow: 0 0 3px 3px #cccccc;
   padding: 30px 0;
   background: url('../img/dashboard-bg.png');
+  margin-bottom: 50px;
 }
 #stats .title {
   line-height: 2em;
@@ -115,6 +128,12 @@ img.avatar {
 }
 #date-inputs-container {
   float: right;
+}
+#client-list .actions .checkbox {
+  margin-top: 10px;
+}
+#client-list .actions {
+  margin-bottom: 20px;
 }
 /***** LOGIN ******/
 /* body{ background: @midnight-blue; }*/

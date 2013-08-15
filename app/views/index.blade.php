@@ -14,11 +14,13 @@
 </div>
 <div id="client-list">
     <h3 class="title">Client List</h3>
-    <label class="checkbox pull-left" for="checkbox1">
-        <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
-        Hide Inactive
-    </label>
-    <a class="btn btn-success pull-right"><i class="fui-plus"></i>New Client</a>
+    <div class="actions clearfix">
+        <label class="checkbox pull-left" for="checkbox1">
+            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+            Hide Inactive
+        </label>
+        <a class="btn btn-success pull-right"><i class="fui-plus"></i>New Client</a>
+    </div>
     <table class="table table-striped table-hover">
         <thead>
             <tr>
@@ -65,4 +67,18 @@
             </tr>
         </tbody>
     </table>
+    <div class="row">
+        <div class="btn-group pull-right">
+            <i class="dropdown-arrow dropdown-arrow-inverse"></i>
+            <button class="btn btn-primary">Choose Action</button>
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-inverse">
+              <li><a href="#fakelink">Sub Menu Element</a></li>
+              <li><a href="#fakelink">Sub Menu Element</a></li>
+              <li><a href="#fakelink">Sub Menu Element</a></li>
+            </ul>
+          </div>
+    </div>
 </div>
