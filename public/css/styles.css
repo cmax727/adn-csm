@@ -63,6 +63,10 @@ h3.title {
   font-size: 1.4em;
   margin-bottom: 1.5em;
 }
+h4.title {
+  font-size: 1.3em;
+  margin-bottom: 1.5em;
+}
 .container {
   width: 960px;
 }
