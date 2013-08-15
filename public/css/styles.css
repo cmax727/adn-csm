@@ -1,0 +1,48 @@
+/* 62px */
+/* 52px */
+/* 40px */
+/* 29px */
+/* 28px */
+/* 24px */
+.inline-block {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+.drop-ie-gradient {
+  filter: unquote("progid:DXImageTransform.Microsoft.gradient(enabled = false)");
+}
+.dropdown-arrow-inverse {
+  border-bottom-color: #34495e !important;
+  border-top-color: #34495e !important;
+}
+body {
+  background: #ecf0f1;
+}
+#sidebar {
+  color: #FFF;
+  background: #34495e;
+}
+#main {
+  background: #FFF;
+  -webkit-box-shadow: 0 0 3px 3px #cccccc;
+  -moz-box-shadow: 0 0 3px 3px #cccccc;
+  box-shadow: 0 0 3px 3px #cccccc;
+}
+header {
+  padding: 20px 0;
+}
+.pad {
+  margin: 20px;
+}
