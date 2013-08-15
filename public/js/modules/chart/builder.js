@@ -1,6 +1,5 @@
 define(
     [],
-
     function () {
        var  chart_container = "#chart",
             data = [3, 60, 25, 77, 51, 22, 81],

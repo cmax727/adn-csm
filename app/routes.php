@@ -14,4 +14,15 @@
 Route::get('/', 'HomeController@index');
 
 Route::controller('login', 'LoginController');
-//Route::controller('provider/app', 'AppController');
+Route::controller('provider/settings', 'SettingsController');
+//Route::controller('app', 'AppController');
+/*
+//Controller located at /app/controllers/Something/SomeController
+<?php
+class Something_SomeController extends BaseController {
+        public function getIndex(){
+                  DB::table('users')->get();
+         }
+}
+//routes.php
+Route::controller('some/thing','Something_SomeController');*/

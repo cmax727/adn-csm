@@ -1,9 +1,9 @@
 <?php
 
-class AppController extends BaseController {
+class JobController extends BaseController{
 	protected $layout = 'layouts.dashboard';
 
-	public function index()
+	public function getIndex()
 	{
 		$this->layout->content = View::make('index');
 	}

@@ -135,39 +135,3 @@ img.avatar {
 #client-list .actions {
   margin-bottom: 20px;
 }
-/***** LOGIN ******/
-/* body{ background: @midnight-blue; }*/
-.login {
-  margin: auto;
-  height: 420px;
-  width: 420px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: #FFF;
-  -webkit-box-shadow: -6px 6px 0 0 #4f6175;
-  -moz-box-shadow: -6px 6px 0 0 #4f6175;
-  box-shadow: -6px 6px 0 0 #4f6175;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  overflow: hidden;
-}
-.login form {
-  padding: 40px 53px;
-}
-.login-header {
-  background: #ecf0f1;
-  padding: 40px 0;
-  text-align: center;
-}
-.login-form .login-field {
-  font-size: 17px;
-  padding-bottom: 11px;
-  padding-top: 11px;
-  text-indent: 3px;
-  width: 299px;
-  margin-bottom: 10px !important;
-}

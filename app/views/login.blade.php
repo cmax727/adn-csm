@@ -1,6 +1,9 @@
+@section('styles')
+  {{ HTML::style('css/login.css') }}
+@stop
 <div class="login">
     <div class="login-header">
-      <a href="/" class="logo"><img src="/img/logo.png"></a>
+      <a href="{{ URL::to('/') }}" class="logo"><img src="{{ URL::asset('img/logo.png') }}"></a>
     </div>
 
     <form class="login-form">
