@@ -12,3 +12,6 @@
 */
 
 Route::get('/', 'HomeController@index');
+
+Route::controller('login', 'LoginController');
+//Route::controller('provider/app', 'AppController');
