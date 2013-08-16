@@ -43,8 +43,8 @@
     {{ HTML::script('flat/js/jquery.placeholder.js') }}
     {{ HTML::script('flat/js/jquery.stacktable.js') }}
 
-    {{ HTML::script('js/lib/underscore.js') }}
-    {{ HTML::script('js/lib/backbone.js') }}
+    {{ HTML::script('js/lib/underscore.min.js') }}
+    {{ HTML::script('js/lib/backbone.min.js') }}
 
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     {{ HTML::script('js/lib/require.js', ['data-main'=>URL::asset('js/app.config.js')]) }}
