@@ -78,3 +78,16 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+
+/*
+LOADING MENU VIEW FOR DASHBOARD
+*/
+View::composer('layouts.dashboard', function($view)
+{
+	if(Request::segment(1) == 'provider')
+		$menu = View::make('providers/menu');
+	else if(Request::segment(1) == 'client')
+		$menu = View::make('clients/menu');
+
+    $view->with('menu', $menu);
+});

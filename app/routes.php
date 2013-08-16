@@ -18,10 +18,6 @@ Route::get('/', function(){
 Route::controller('login', 'LoginController');
 
 Route::group(array('prefix' => 'provider'), function(){
-    
-    /*Route::any('/', function(){
-    	die('a');
-    });*/
 
     Route::get('/', 'Provider_HomeController@index');
     Route::controller('client', 'Provider_ClientController');
@@ -29,5 +25,9 @@ Route::group(array('prefix' => 'provider'), function(){
 
 });
 
-Route::controller('client/job', 'Client_JobController');
-Route::controller('client/app', 'Client_AppController');
+Route::group(array('prefix' => 'client'), function(){
+
+	Route::controller('job', 'Client_JobController');
+	Route::controller('app', 'Client_AppController');
+
+});
