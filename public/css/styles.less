@@ -11,19 +11,34 @@ h4.title{ font-size: 1.3em; margin-bottom: 1.5em; }
 
 .container{ width: 960px; }
 header{ padding: 15px 0;}
-.pad{ margin: 0 20px ; }
+/*.pad{ margin: 0 20px ; }*/
 
 #sidebar{ color: @sidebar-text;/*background: @midnight-blue;*/ }
 #sidebar a{ color: @sidebar-text; }
-#sidebar a:hover{ color: @wet-asphalt;}
+#sidebar a:hover{ color: #FFF;}
 #sidebar .nav-list li a{ margin-bottom: 15px; }
 i{ margin-right: 15px; }
+.fixed{ position: fixed;}
+#sidebar-container{ width: 220px; }
+#sidebar-container.fixed{ top: 30px;}
 
-.avatar-container{ margin-bottom: 40px; }
+#main-menu a{ height: 48px; text-indent: 15px; display: block; line-height: 3em;
+ border-left: 5px solid transparent; font-size: 1.2em; font-weight: 700; }
+#main-menu ul ul a{ text-indent: 25px; }
+#main-menu ul{ list-style: none; }
+#main-menu ul{ margin-left: 0; }
+
+#main-menu a:hover,
+#main-menu li.active a{
+	border-left: 5px solid @turquoise;
+	background: #425262;
+}
+
+.avatar-container{ margin-bottom: 40px; margin-left: 30px; }
 img.avatar{ .border-radius(100px); max-width: 50px; max-height: 50px; border: 2px solid #FFF; float: left; }
 .username{ float: left; width: 100px; margin-left: 15px; font-size: 1.2em; font-weight: 700; margin-top: 15px;}
 
-#main{ background: #FFF; .box-shadow(0 0 3px 3px #CCC); padding: 30px 0; background: url('../img/dashboard-bg.png'); margin-bottom: 50px; }
+#main{ background: #FFF; .box-shadow(0 0 3px 3px #CCC); padding: 30px 0; background: url('../img/dashboard-bg.png'); margin-bottom: 50px; position: relative; }
 
 #stats .title{ line-height: 2em; margin-right: 50px; }
 #stats .title, #slc-time-frame, #stats .select{ float: left; }
@@ -31,3 +46,9 @@ img.avatar{ .border-radius(100px); max-width: 50px; max-height: 50px; border: 2p
 
 #client-list .actions .checkbox{ margin-top: 10px; }
 #client-list .actions{ margin-bottom: 20px; }
+
+.steps{ margin-bottom: 20px;}
+
+.ui-slider{ margin: 0 50px; }
+.step-labels .ui-slider-value{ width: 100px; text-align: center; float: left; margin-top: 0; margin-bottom: 10px; }
+.step-labels ul{ list-style: none; margin-left: 0; }

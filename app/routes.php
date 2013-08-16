@@ -11,9 +11,23 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+Route::get('/', function(){
+	return Redirect::to('login');
+});
 
 Route::controller('login', 'LoginController');
-Route::controller('provider/settings', 'SettingsController');
-Route::controller('client/job', 'JobController');
-Route::controller('client/app', 'AppController');
+
+Route::group(array('prefix' => 'provider'), function(){
+    
+    /*Route::any('/', function(){
+    	die('a');
+    });*/
+
+    Route::get('/', 'Provider_HomeController@index');
+    Route::controller('client', 'Provider_ClientController');
+	Route::controller('settings', 'Provider_SettingsController');
+
+});
+
+Route::controller('client/job', 'Client_JobController');
+Route::controller('client/app', 'Client_AppController');
