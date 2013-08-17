@@ -5,7 +5,11 @@ class Client_JobController extends BaseController{
 
 	public function getIndex()
 	{
-		$this->layout->content = View::make('clients/jobs/form');
+	}
+
+	public function getNew()
+	{
+		$this->layout->content = View::make('clients/jobs/form-tabs');
 	}
 
 }
