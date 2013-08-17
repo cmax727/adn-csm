@@ -2,6 +2,7 @@
 
 class Provider_ClientController extends BaseController{
 	protected $layout = 'layouts.dashboard';
+	protected $clien = null;
 
 	public function getIndex()
 	{
@@ -9,6 +10,10 @@ class Provider_ClientController extends BaseController{
 	}
 
 	public function getNew($step = 1){
-		$this->layout->content = View::make('providers/clients/steps/step1');	
+		$this->layout->content = View::make('providers/clients/steps/step1');
+	}
+
+	public function getDashboard(){
+		$this->layout->content = View::make('providers/clients/dashboard');	
 	}
 }
