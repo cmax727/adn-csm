@@ -1,3 +1,10 @@
+@section('breadcrumbs')
+    <ul>
+        <li><a href="">Job Posts</a></li>
+        <li><i class="fui-arrow-right"></i></li>
+        <li class="active">Create Jobs</li>
+    </ul>
+@stop
 <div id="head-tabs">
 	<ul class="nav custom-nav-tabs row-fluid">
 		<li class="active">

@@ -1,9 +1,3 @@
-@section('breadcrumbs')
-    <ul>
-        <li><a href="">Job Posts</a></li>
-        <li class="active">Create Jobs</li>
-    </ul>
-@stop
 @section('scripts')
 	{{ HTML::script('js/lib/raphael.js') }}
 	{{ HTML::script('js/lib/color.jquery.js') }}
@@ -15,37 +9,27 @@
 
 	<input type="text" name="job-title" placeholder="Job Title" class="full-width" />
 	<input type="text" name="company-website" placeholder="Company Website (http//websitename.com)" class="full-width" />
-	<div class="row-fluid">
-		<div class="span8">
-			<textarea name="job-description" rows="5" placeholder="Job Description"></textarea>
+	<div class="row">
+		<div class="span6">
+			<textarea name="job-description" rows="5" placeholder="Job Description" class="full-width"></textarea>
 		</div>
-		<div class="span4">
-			<ul class="">
-				<li>
-					<label class="radio checked">
-					<input type="radio" name="optionsRadios" value="option1"  data-toggle="radio" checked="checked">
-					Company Drivers
-					</label>
-				</li>
-				<li>
-					<label class="radio">
-					<input type="radio" name="optionsRadios" value="option2" data-toggle="radio" />
-					Owner Operators
-					</label>
-				</li>
-				<li>
-					<label class="radio">
-					<input type="radio" name="optionsRadios" value="option2" data-toggle="radio" />
-					Students
-					</label>
-				</li>
-				<li>
-					<label class="radio">
-					<input type="radio" name="optionsRadios" value="option2" data-toggle="radio" />
-					Teams
-					</label>
-				</li>
-			</ul>
+		<div class="span3">
+			<label class="checkbox" for="checkbox1">
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Company Drivers
+            </label>
+            <label class="checkbox" for="checkbox1">
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Owner Operators
+            </label>
+            <label class="checkbox" for="checkbox1">
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Students
+            </label>
+            <label class="checkbox" for="checkbox1">
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Teams
+            </label>
 		</div>
 	</div>
 </section>
