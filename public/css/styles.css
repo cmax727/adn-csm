@@ -31,26 +31,26 @@
   margin-bottom: 60px;
   margin-top: 20px;
 }
-path {
+#chart path {
   stroke: #F00;
   stroke-width: 2;
   fill: none;
 }
-line {
+#chart line {
   stroke: black;
 }
-text {
+#chart text {
   /*font-family: Arial;*/
 
   font-weight: normal;
   font-size: 1.2em;
   stroke: #34495e;
 }
-.yTicks {
+#chart .yTicks {
   stroke: #CCC;
   stroke-width: 1;
 }
-.chartdots {
+#chart .chartdots {
   fill: #F00;
   stroke: #FFF;
   stroke-width: 3;
@@ -77,10 +77,17 @@ h5 {
 .container {
   width: 960px;
 }
-header {
+#header {
   padding: 15px 0;
+  line-height: 2em;
 }
 /*.pad{ margin: 0 20px ; }*/
+#main-menu a,
+#header,
+#head-tabs {
+  font-size: 1.1em;
+  font-weight: 700;
+}
 #sidebar {
   color: #c2c5ca;
   /*background: @midnight-blue;*/
@@ -110,10 +117,8 @@ i {
   height: 48px;
   text-indent: 15px;
   display: block;
-  line-height: 3em;
+  line-height: 3.5em;
   border-left: 5px solid transparent;
-  font-size: 1.2em;
-  font-weight: 700;
 }
 #main-menu ul ul a {
   text-indent: 25px;
@@ -125,7 +130,7 @@ i {
   margin-left: 0;
 }
 #main-menu a:hover,
-#main-menu li.active a {
+#main-menu li.active > a {
   border-left: 5px solid #1abc9c;
   background: #425262;
 }
@@ -237,17 +242,36 @@ input.full-width {
   margin-top: -30px;
   width: 740px;
 }
-.custom-nav-tabs .span6 {
+.custom-nav-tabs {
   text-align: center;
 }
-.custom-nav-tabs .span6 a {
+.custom-nav-tabs a {
   height: 44px;
   line-height: 3.4em;
+  width: 50%;
+  width: 370px;
+  color: #95a5a6;
+}
+.custom-nav-tabs li {
+  float: left;
 }
 .custom-nav-tabs li a {
-  background-color: #eeeeee;
+  background-color: #EEE;
 }
 .custom-nav-tabs li.active a,
 .custom-nav-tabs li a:hover {
   background-color: #FFF;
+  color: #16a085;
+}
+#breadcrumbs ul {
+  margin: 0;
+}
+#breadcrumbs li {
+  display: inline;
+}
+#breadcrumbs li a {
+  color: #95a5a6;
+}
+#breadcrumbs li.active {
+  color: #16a085;
 }

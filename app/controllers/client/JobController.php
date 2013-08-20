@@ -5,6 +5,7 @@ class Client_JobController extends BaseController{
 
 	public function getIndex()
 	{
+		$this->layout->content = View::make('clients/jobs/index');
 	}
 
 	public function getNew()

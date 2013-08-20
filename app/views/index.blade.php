@@ -75,7 +75,7 @@
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu dropdown-inverse">
-              <li><a href="#fakelink">Sub Menu Element</a></li>
+              <li><a href="#fakelink">Delete</a></li>
               <li><a href="#fakelink">Sub Menu Element</a></li>
               <li><a href="#fakelink">Sub Menu Element</a></li>
             </ul>

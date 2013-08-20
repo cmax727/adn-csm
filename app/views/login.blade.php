@@ -1,7 +1,7 @@
 @section('styles')
   {{ HTML::style('css/login.css') }}
 @stop
-<div class="login">
+<div class="login-screen">
     <div class="login-header">
       <a href="{{ URL::to('/') }}" class="logo"><img src="{{ URL::asset('img/logo.png') }}"></a>
     </div>

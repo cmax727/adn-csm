@@ -1,13 +1,15 @@
 @extends('layouts.base')
 @section('page')
 <div class="container">
-        <header>
+        <header id="header">
             <div class="row">
                 <div class="span3">
                     <a href="{{ URL::to('/') }}" id="logo"><img src="{{ URL::asset('img/logo.png') }}"></a>
                 </div>
                 <div class="span9">
-                    <a href="{{ URL::to('/') }}" class="pull-left">Dashboard</a>
+                    <div id="breadcrumbs" class="pull-left">
+                        @yield('breadcrumbs')
+                    </div>
                     <a href="{{ URL::to('logout') }}" class="pull-right"><i class="fui-power"></i>Logout</a>
                 </div>
             </div>

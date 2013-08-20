@@ -1,6 +1,6 @@
 @import "../flat/less/config";
 @import "../flat/less/mixins";
-@import "../css/charts";
+@import "../css/svg";
 
 @sidebar-text:#c2c5ca;
 
@@ -12,8 +12,15 @@ h4{ font-size: 1.3em; margin-bottom: 1.5em; }
 h5{ font-size: 1em; margin-bottom: 1em; }
 
 .container{ width: 960px; }
-header{ padding: 15px 0;}
+#header{ padding: 15px 0; line-height: 2em;}
 /*.pad{ margin: 0 20px ; }*/
+
+#main-menu a,
+#header,
+#head-tabs{
+font-size: 1.1em;
+font-weight: 700;
+}
 
 #sidebar{ color: @sidebar-text;/*background: @midnight-blue;*/ }
 #sidebar a{ color: @sidebar-text; }
@@ -24,14 +31,14 @@ i{ margin-right: 15px; }
 #sidebar-container{ width: 220px; }
 #sidebar-container.fixed{ top: 30px;}
 
-#main-menu a{ height: 48px; text-indent: 15px; display: block; line-height: 3em;
- border-left: 5px solid transparent; font-size: 1.2em; font-weight: 700; }
+#main-menu a{ height: 48px; text-indent: 15px; display: block; line-height: 3.5em;
+ border-left: 5px solid transparent; }
 #main-menu ul ul a{ text-indent: 25px; }
 #main-menu ul{ list-style: none; }
 #main-menu ul{ margin-left: 0; }
 
 #main-menu a:hover,
-#main-menu li.active a{
+#main-menu li.active>a{
 	border-left: 5px solid @turquoise;
 	background: #425262;
 }
@@ -72,10 +79,14 @@ input.full-width{ width: 95%; }
 .custom-tab-content.active{ display: block; }
 
 #head-tabs{ width: 100px;  margin-left: -20px; margin-top: -30px; width: 740px; }
-.custom-nav-tabs .span6{ text-align: center };
-.custom-nav-tabs .span6 a{ height: 44px; line-height: 3.4em; }
-
-.custom-nav-tabs li a{background-color: #eeeeee;}
-
+.custom-nav-tabs{ text-align: center };
+.custom-nav-tabs a{ height: 44px; line-height: 3.4em; width: 50%; width: 370px; color: @concrete; }
+.custom-nav-tabs li{ float: left; }
+.custom-nav-tabs li a{background-color: #EEE;}
 .custom-nav-tabs li.active a,
-.custom-nav-tabs li a:hover{ background-color: #FFF; }
+.custom-nav-tabs li a:hover{ background-color: #FFF; color: @green-sea; }
+
+#breadcrumbs ul{ margin:0; }
+#breadcrumbs li{ display: inline; }
+#breadcrumbs li a{ color: @concrete;}
+#breadcrumbs li.active{ color: @green-sea; }

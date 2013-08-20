@@ -1,3 +1,15 @@
+@section('breadcrumbs')
+    <ul>
+        <li><a href="">Job Posts</a></li>
+        <li class="active">Create Jobs</li>
+    </ul>
+@stop
+@section('scripts')
+	{{ HTML::script('js/lib/raphael.js') }}
+	{{ HTML::script('js/lib/color.jquery.js') }}
+	{{ HTML::script('js/lib/jquery.usmap.js') }}
+	{{ HTML::script('js/lib/require.js', ['data-main'=>URL::asset('js/map.js')]) }}
+@stop
 <section id="job-info">
 	<h3 class="title">Required Info</h3>
 
@@ -40,9 +52,10 @@
 <section id="job-location">
 	<h3 class="title">Job Location / Hiring Area</h3>
 	<h4 class="title">Target States:</h4>
-	<img src="{{ URL::asset('img/map.png') }}">
-	<h4 class="title">Target Cities:</h4>
+	<div id="map" style="width: 700px; height: 500px;"></div>
 
+
+	<h4 class="title">Target Cities:</h4>
 	<div class="control-group">
 	<div class="input-append">
 	  <input class="span8" type="text" placeholder="Search">

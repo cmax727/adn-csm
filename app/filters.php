@@ -91,3 +91,8 @@ View::composer('layouts.dashboard', function($view)
 
     $view->with('menu', $menu);
 });
+
+function menu_active($uri){
+	if(Request::segment(2) == $uri)
+		return 'class="active"';
+}
