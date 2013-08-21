@@ -9,9 +9,9 @@ class Provider_ClientController extends BaseController{
 		$this->layout->content = View::make('providers/clients/index');
 	}
 
-	public function getNew($step = 1)
+	public function getNew($currentStep = 1)
 	{
-		$this->layout->content = View::make('providers/clients/steps/step1');
+		$this->layout->content = View::make('providers/clients/steps/step'.$currentStep, ['currentStep' => $currentStep]);
 	}
 
 	public function getDashboard()

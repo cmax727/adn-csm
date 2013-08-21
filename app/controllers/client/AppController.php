@@ -5,7 +5,7 @@ class Client_AppController extends BaseController{
 
 	public function getIndex()
 	{
-		$this->layout->content = View::make('clients/jobs/form');
+		$this->layout->content = '';
 	}
 
 	public function getFilter()

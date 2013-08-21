@@ -5,7 +5,7 @@ class Provider_HomeController extends BaseController {
 
 	public function index()
 	{
-		$this->layout->content = View::make('index');
+		$this->layout->content = View::make('providers/index');
 	}
 
 }

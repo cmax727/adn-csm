@@ -7,23 +7,37 @@
 		<div class="control-group">
 			<label class="control-label">Company Name</label>
 			<div class="controls">
-			<input type="text" name="" placeholder="Jimbo Truckin">
+			<input type="text" name="" placeholder="Jimbo Truckin" class="span4">
 			</div>
 		</div>
 		<div class="control-group">
 			<label class="control-label">Company Address</label>
 			<div class="controls">
-			<input type="text" name="" placeholder="Address1">
+			<input type="text" name="" placeholder="Address1" class="span4">
 			</div>
 		</div>
 		<div class="control-group">
 			<div class="controls">
-			<input type="text" name="" placeholder="Address2">
+			<input type="text" name="" placeholder="Address2" class="span4">
 			</div>
 		</div>
 		<div class="control-group">
 			<div class="controls">
-			<input type="text" name="" placeholder="City">
+			<input type="text" name="" placeholder="City" class="span4">
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label">Company Address</label>
+			<div class="controls">
+				<div class="row">
+					<select name="estate" class="span2">
+						<option name="">Select Estate</option>
+						<option name="">Alabama</option>
+					</select>
+					<div class="span2">
+			        <input type="text" name="" placeholder="Zip" class="span2">
+			    	</div>
+			    </div>
 			</div>
 		</div>
 		<div class="control-group">
@@ -63,3 +77,4 @@
         </tbody>
     </table>
 </section>
+<a class="btn btn-primary pull-right" href="{{URL::to('provider/client/new/'.($currentStep+1))}}">Next Step<i class="fui-arrow-right"></i></a>

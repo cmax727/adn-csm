@@ -82,7 +82,7 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 h4,
 .h4 {
@@ -91,6 +91,9 @@ h4,
 h5,
 .h5 {
   font-size: 1em;
+}
+span.required {
+  color: #e74c3c;
 }
 .container {
   width: 960px;
@@ -226,9 +229,16 @@ img.avatar {
 .control-group {
   margin-bottom: 10px;
 }
-section,
+.select .btn,
+.control-group,
+.controls .select {
+  margin-bottom: 0;
+}
+section {
+  margin-bottom: 50px;
+}
 .subsection {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 #job-post-numbers .alert {
   padding: 16px;
@@ -298,4 +308,9 @@ textarea.full-width {
 }
 #breadcrumbs li.active {
   color: #16a085;
+}
+.row-fluid input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }

@@ -10,6 +10,6 @@
 		<li class="ui-slider-value"><a>Confirmation</a></li>
 	</ul>
 </div>
-<div id="slider" class="ui-slider" data-steps="7" data-current="1">
+<div id="slider" class="ui-slider" data-steps="7" data-current="{{$currentStep}}">
 </div>
 </div>
