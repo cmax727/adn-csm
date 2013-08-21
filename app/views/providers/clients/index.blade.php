@@ -1,3 +1,10 @@
+@section('breadcrumbs')
+    <ul>
+        <li><a href="">Dashboard</a></li>
+        <li><i class="fui-arrow-right"></i></li>
+        <li class="active">Client Manager</li>
+    </ul>
+@stop
 <div id="client-list">
     <h3 class="title">Client Manager</h3>
     <div class="actions clearfix">

@@ -1,3 +1,8 @@
+@section('breadcrumbs')
+    <ul>
+        <li class="active">Dashboard</li>
+    </ul>
+@stop
 <div id="stats" class="clearfix">
     <h3 class="title">App Totals</h3>
     <select name="time-frame" id="slc-time-frame">
